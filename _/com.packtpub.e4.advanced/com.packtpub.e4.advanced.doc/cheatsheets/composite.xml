@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compositeCheatsheet name="A collection set of cheat sheets">
+	<taskGroup kind="choice" name="Example Cheat Sheets Collection"
+		skip="false">
+		<intro>
+			<b>Overview of cheat sheets</b>
+		</intro>
+		<onCompletion>
+			<b>Congratulations of completing the cheat sheets</b>
+		</onCompletion>
+		<task kind="cheatsheet" name="Example Cheat Sheet" skip="false">
+			<intro>
+				The cheat sheet provided in this plug-in
+			</intro>
+			<onCompletion>
+				Congratulations, you have completed the tasks
+			</onCompletion>
+			<param name="path" value="javaApplication.xml">
+			</param>
+		</task>
+		<taskGroup kind="choice" name="JDT Cheat Sheets" skip="false">
+			<intro>
+				<b>Introduction</b>
+				These are the cheat sheets provided by the JDT
+			</intro>
+			<onCompletion>
+				Congratulations, you have completed the tasks
+			</onCompletion>
+			<task kind="cheatsheet" name="JDT Hello World" skip="false">
+				<intro>
+					Provides a simple Hello World project
+				</intro>
+				<onCompletion>
+					Congratulations, you have completed the task
+				</onCompletion>
+				<param name="id" value="org.eclipse.jdt.helloworld">
+				</param>
+			</task>
+			<task kind="cheatsheet" name="SWT Hello World" skip="false">
+				<intro>
+					Provides a SWT hello world project
+				</intro>
+				<onCompletion>
+					Congratulations, you have completed the task
+				</onCompletion>
+				<param name="id" value="org.eclipse.jdt.helloworld.swt">
+				</param>
+			</task>
+		</taskGroup>
+	</taskGroup>
+</compositeCheatsheet>

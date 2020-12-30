@@ -1,0 +1,20 @@
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0">
+	<reference id="logService" interface="org.osgi.service.log.LogService" />
+	<service ranking="-1" activation="eager">
+		<interfaces>
+			<value>com.packtpub.e4.advanced.feeds.IFeedParser</value>
+		</interfaces>
+		<service-properties>
+			<entry key="other.property">
+				<array>
+					<value type="java.lang.Integer">314</value>
+					<value type="java.lang.Integer">222</value>
+				</array>
+			</entry>
+		</service-properties>
+		<bean class="com.packtpub.e4.advanced.feeds.internal.MockFeedParser">
+			<property name="log" ref="logService"/>
+			<property name="numberOfItems" value="5"/>
+		</bean>
+	</service>
+</blueprint>
